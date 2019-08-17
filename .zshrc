@@ -2,14 +2,14 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/russo/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-#ZSH_THEME="agnoster"
 ZSH_THEME="spaceship"
+#ZSH_THEME="agnoster"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -98,10 +98,28 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-alias python3="python3.7"
+
+# User Customized Commands
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
 
-# Customized commands
+### Added by Zplugin's installer
+source "$HOME/.zplugin/bin/zplugin.zsh"
+autoload -Uz _zplugin
+(( ${+_comps} )) && _comps[zplugin]=_zplugin
+### End of Zplugin's installer chunk
 
+# Zplugin Plugins List
+zplugin light zdharma/fast-syntax-highlighting
+zplugin light zsh-users/zsh-autosuggestions
+zplugin light zsh-users/zsh-completions
+
+#Custom Theme Config
+SPACESHIP_USER_SHOW=always
+SPACESHIP_PROMPT_ADD_NEWLINE=false
+SPACESHIP_CHAR_SYMBOL="λ"
+SPACESHIP_CHAR_SUFFIX=" "
+
+# Pipenv, create venv inside project
+export PIPENV_VENV_IN_PROJECT=1    
