@@ -101,9 +101,6 @@ source $ZSH/oh-my-zsh.sh
 
 # User Customized Commands
 
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-export PATH="$PATH:$HOME/.rvm/bin"
-
 ### Added by Zplugin's installer
 source "$HOME/.zplugin/bin/zplugin.zsh"
 autoload -Uz _zplugin
@@ -123,3 +120,7 @@ SPACESHIP_CHAR_SUFFIX=" "
 
 # Pipenv, create venv inside project
 export PIPENV_VENV_IN_PROJECT=1    
+
+# asdf-vm setup
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
