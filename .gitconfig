@@ -1,3 +1,6 @@
 [user]
 	email = atchin_@hotmail.com
 	name = undersfx
+[core]
+    excludesfile = /home/russo/.gitignore_global
+    editor = vim

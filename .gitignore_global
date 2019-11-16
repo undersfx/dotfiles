@@ -1,0 +1,6 @@
+#IDE Config Files
+.idea/
+.vscode/
+
+#Django
+*.sqlite3
