@@ -119,7 +119,8 @@ SPACESHIP_CHAR_SYMBOL="λ"
 SPACESHIP_CHAR_SUFFIX=" "
 
 # Pipenv, create venv inside project
-export PIPENV_VENV_IN_PROJECT=1    
+export PIPENV_VENV_IN_PROJECT=1
+export PIPENV_NO_INHERIT=1
 
 # asdf-vm setup
 . $HOME/.asdf/asdf.sh
