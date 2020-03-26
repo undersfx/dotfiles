@@ -1,2 +1,5 @@
 " [F12] shows and hides whitespaces:
 nnoremap    <F12> :<C-U>setlocal lcs=tab:>-,trail:-,eol:$ list! list? <CR>
+
+" Python no-tabs configuration (Use :retab to correct a file):
+set tabstop=4 shiftwidth=4 expandtab
