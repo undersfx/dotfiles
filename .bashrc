@@ -115,3 +115,11 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# Pipenv, create venv inside project
+export PIPENV_VENV_IN_PROJECT=1
+export PIPENV_NO_INHERIT=1
+
+# asdf-vm setup
+. $HOME/.asdf/asdf.sh
+. $HOME/.asdf/completions/asdf.bash
