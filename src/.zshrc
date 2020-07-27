@@ -106,6 +106,7 @@ fi
 
 # User Customized Commands
 
+# Apparently zplugin is not necessary anymore 
 ### Added by Zplugin's installer
 source "$HOME/.zplugin/bin/zplugin.zsh"
 autoload -Uz _zplugin
