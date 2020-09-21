@@ -106,7 +106,6 @@ fi
 
 # User Customized Commands
 
-# Apparently zplugin is not necessary anymore 
 ### Added by Zplugin's installer
 source "$HOME/.zplugin/bin/zplugin.zsh"
 autoload -Uz _zplugin
@@ -114,9 +113,11 @@ autoload -Uz _zplugin
 ### End of Zplugin's installer chunk
 
 # Zplugin Plugins List
+#zplugin self-update
 zplugin light zdharma/fast-syntax-highlighting
 zplugin light zsh-users/zsh-autosuggestions
 zplugin light zsh-users/zsh-completions
+ 
 
 #Custom Theme Config
 SPACESHIP_USER_SHOW=always
