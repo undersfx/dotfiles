@@ -11,15 +11,17 @@ echo "Updating Aptitude"
 sudo apt update
 
 echo "Installing Packages"
-sudo apt install git curl wget xclip vim -y
+sudo apt install git curl wget xclip vim tmux htop tilda -y
 
 
 # --- Setup chaves SSH
 
 echo "Generating a SSH Key"
-ssh-keygen -t rsa -b 4096 -C "atchin_@hotmail.com"
-ssh-add ~/.ssh/id_rsa
-cat ~/.ssh/id_rsa.pub | xclip -selection clipboard
+ssh-keygen -t ed25519 -C "atchin_@hotmail.com"
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+echo "Your public key will be sent to your clipboard!"
+cat ~/.ssh/id_ed25519.pub | xclip -selection clipboard
 
 
 # --- Setup do Ambiente (Ubuntu Only)
@@ -27,7 +29,7 @@ cat ~/.ssh/id_rsa.pub | xclip -selection clipboard
 echo "Ubuntu Setup"
 
 # Instalar extras
-sudo apt install ubuntu-restricted-extras -y
+sudo apt install ubuntu-restricted-extras libavcodec-extra libav-tools -y
 
 
 # --- Setup do Ambiente (Gnome Only)
@@ -38,16 +40,10 @@ echo "Gnome Setup"
 sudo apt install gnome-tweaks -y
 
 # Instalar GNOME extensions
-sudo apt install gnome-shell-extensions chrome-gnome-shell -y
-
-# Ativar extensões:
+# Extensões:
 # Sound Input & Output Device Chooser
 # Multimonitor Add-on
-
-# Instalar tema Flat Remix (dark mode com "yaru dark")
-# sudo add-apt-repository ppa:daniruiz/flat-remix
-# sudo apt update
-# sudo apt install flat-remix-gnome
+sudo apt install gnome-shell-extensions chrome-gnome-shell -y
 
 
 # --- Instalação e Configuração do ZSH
@@ -56,8 +52,7 @@ echo "Installing ZSH Shell"
 sudo apt install zsh -y
 
 echo "Installing Oh My ZSH"
-sh -c "$(wget https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh -O -)"
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Mudar shell padrão para ZSH
 chsh -s $(which zsh)
-
