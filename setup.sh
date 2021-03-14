@@ -29,7 +29,7 @@ cat ~/.ssh/id_ed25519.pub | xclip -selection clipboard
 echo "Ubuntu Setup"
 
 # Instalar extras
-sudo apt install ubuntu-restricted-extras libavcodec-extra libav-tools -y
+sudo apt install ubuntu-restricted-extras libavcodec-extra -y
 
 
 # --- Setup do Ambiente (Gnome Only)

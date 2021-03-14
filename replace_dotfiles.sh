@@ -8,10 +8,10 @@
 
 HOJE=$(date +%d_%m_%Y_%T)
 
-for DOTFILE in $(ls -a ~/.dotfiles/src/ | grep -iE '^\.[a-z]'); do 
+for DOTFILE in $(ls -a ~/dotfiles/src/ | grep -iE '^\.[a-z]'); do 
 	if [ -e ~/$DOTFILE ]
 	then
 		mv ~/$DOTFILE ~/""$DOTFILE"_"$HOJE""
 	fi
-	cp ~/.dotfiles/src/$DOTFILE ~
+	cp ~/dotfiles/src/$DOTFILE ~
 done
