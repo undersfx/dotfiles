@@ -4,7 +4,7 @@
 
 
 
-# --- Backup e Substituíção dos Arquivos
+# --- Copia e/ou Append dos Arquivos
 
 NOW=$(date +%d_%m_%Y_%T)
 
@@ -15,7 +15,9 @@ for DOTFILE in $(ls -a ~/dotfiles/src/ | grep -iE '^\.[a-z]'); do
 		echo $'\n' >> ~/$DOTFILE
 		echo "# - - - Config updated at: $NOW - - -" >> ~/$DOTFILE
 		echo ~/dotfiles/src/$DOTFILE >> ~/$DOTFILE
+		echo "$DOTFILE updated."
 	else
 		cp ~/dotfiles/src/$DOTFILE ~
+		echo "$DOTFILE copied."
 	fi
 done
