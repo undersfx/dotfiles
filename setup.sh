@@ -32,20 +32,6 @@ echo "Ubuntu Setup"
 sudo apt install ubuntu-restricted-extras libavcodec-extra -y
 
 
-# --- Setup do Ambiente (Gnome Only)
-
-echo "Gnome Setup"
-
-# Instalar gnome tweaks
-sudo apt install gnome-tweaks -y
-
-# Instalar GNOME extensions
-# Extensões:
-# Sound Input & Output Device Chooser
-# Multimonitor Add-on
-sudo apt install gnome-shell-extensions chrome-gnome-shell -y
-
-
 # --- Instalação e Configuração do ZSH
 
 echo "Installing ZSH Shell"
