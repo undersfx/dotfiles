@@ -40,10 +40,16 @@ Replace the dotfiles with the new ones
 sh replace_dotfiles.sh
 ```
 
-Remove gnome bug when switching keybooard layout:
+# If using GNOME
+
+Remove GNOME bug when switching keybooard layout:
 ```bash
 sudo vim /usr/share/X11/xkb/symbols/br
 ```
 
 Comment this line: `modifier_map Mod3   { Scroll_Lock };`
 
+Install gnome tweaks
+```bash
+sudo sh gnome_setup.sh
+```
