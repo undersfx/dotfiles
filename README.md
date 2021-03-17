@@ -49,7 +49,7 @@ sudo vim /usr/share/X11/xkb/symbols/br
 
 Comment this line: `modifier_map Mod3   { Scroll_Lock };`
 
-Install gnome tweaks
+Install GNOME setup
 ```bash
 sudo sh gnome_setup.sh
 ```
