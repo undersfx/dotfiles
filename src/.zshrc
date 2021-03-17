@@ -1,3 +1,6 @@
+# Spaceship Theme
+SH_THEME="spaceship"
+
 # Import Bash aliases
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
