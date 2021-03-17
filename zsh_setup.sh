@@ -11,6 +11,3 @@ sudo apt install -y fonts-powerline
 echo "Instaling Spaceship Promp"
 git clone https://github.com/denysdovhan/spaceship-prompt.git "$ZSH_CUSTOM/themes/spaceship-prompt" --depth=1
 ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/themes/spaceship.zsh-theme"
-
-echo "Adding custom confs to .zshrc file"
-cat src/_zshrc >> ~/.zshrc
