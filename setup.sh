@@ -13,6 +13,8 @@ sudo apt update
 echo "Installing Packages"
 sudo apt install git curl wget xclip vim tmux htop tilda -y
 
+echo "Installing Dev Packages"
+sudo apt install python3-dev -y
 
 # --- Setup chaves SSH
 

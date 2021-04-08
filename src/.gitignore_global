@@ -1,6 +1,12 @@
-#IDE Config Files
+# IDE Config Files
 .idea/
 .vscode/
 
-#Django
+# Config Files
+.env
+
+# Python
+.venv/
+
+# Django
 *.sqlite3
