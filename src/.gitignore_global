@@ -10,3 +10,7 @@
 
 # Django
 *.sqlite3
+
+# Log Files
+output.log
+nohup.out
