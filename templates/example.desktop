@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=ProgramName
+Exec=Command
+Comment=Description
+Terminal=false
+Icon=/path/to/icon.png
+Type=Application
+
+# Edit with your program configs
+# Save in the dir: .local/share/applications/
+# Alternatively, use a GUI tool like alacarte
+# Install: sudo apt-get install alacarte
