@@ -15,3 +15,6 @@ sudo apt install gnome-tweaks -y
 # Sound Input & Output Device Chooser
 # Multimonitor Add-on
 sudo apt install gnome-shell-extensions chrome-gnome-shell -y
+
+# Fix Scroll Lock bug with brazillian keyboard
+sed -i 's/modifier_map Mod3   { Scroll_Lock }\;/\#modifier_map Mod3   { Scroll_Lock }\;/' /usr/share/X11/xkb/symbols/br
