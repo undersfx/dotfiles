@@ -40,16 +40,7 @@ Update the dotfiles with the new config
 sh update_dotfiles.sh
 ```
 
-# If using GNOME
-
-Remove GNOME bug when switching keybooard layout:
-```bash
-sudo vim /usr/share/X11/xkb/symbols/br
-```
-
-Comment this line: `modifier_map Mod3   { Scroll_Lock };`
-
-Install GNOME setup
+Install GNOME setup (for Gnome environment only)
 ```bash
 sudo sh gnome_setup.sh
 ```
