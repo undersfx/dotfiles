@@ -29,6 +29,8 @@ cat ~/.ssh/id_ed25519.pub | xclip -selection clipboard
 # --- Setup do Ambiente (Ubuntu Only)
 
 echo "Ubuntu Setup"
+mkdir ~/workenv
+cp src/.gitconfig ~/workenv/.gitconfig-workenv
 
 # Instalar extras
 sudo apt install ubuntu-restricted-extras libavcodec-extra -y
