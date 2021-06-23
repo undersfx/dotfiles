@@ -43,4 +43,4 @@ echo "Installing Oh My ZSH"
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Mudar shell padrão para ZSH
-chsh -s $(which zsh)
+runuser -l $(whoami) -c 'chsh -s $(which zsh)'
