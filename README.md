@@ -35,9 +35,9 @@ sudo sh asdf_setup.sh
 sudo sh zsh_setup.sh
 ```
 
-Replace the dotfiles with the new ones
+Update the dotfiles with the new config
 ```bash
-sh replace_dotfiles.sh
+sh update_dotfiles.sh
 ```
 
 # If using GNOME
